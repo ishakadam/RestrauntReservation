@@ -66,6 +66,7 @@
                 android:id="@+id/t1"
                 android:layout_width="131dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_1" />
 
@@ -73,6 +74,7 @@
                 android:id="@+id/t2"
                 android:layout_width="135dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_2" />
 
@@ -80,6 +82,7 @@
                 android:id="@+id/t3"
                 android:layout_width="137dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_3" />
 
@@ -93,6 +96,7 @@
                 android:id="@+id/t4"
                 android:layout_width="131dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_4" />
 
@@ -100,6 +104,7 @@
                 android:id="@+id/t5"
                 android:layout_width="135dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_5" />
 
@@ -107,6 +112,7 @@
                 android:id="@+id/t6"
                 android:layout_width="137dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_6" />
 
@@ -120,6 +126,7 @@
                 android:id="@+id/t7"
                 android:layout_width="131dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_7" />
 
@@ -127,6 +134,7 @@
                 android:id="@+id/t8"
                 android:layout_width="135dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_8" />
 
@@ -134,6 +142,7 @@
                 android:id="@+id/t9"
                 android:layout_width="137dp"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:padding="30dp"
                 android:text="@string/_9" />
 

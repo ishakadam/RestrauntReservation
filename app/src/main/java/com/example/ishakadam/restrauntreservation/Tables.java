@@ -1,7 +1,7 @@
 package com.example.ishakadam.restrauntreservation;
 
 public class Tables {
-
+    String tableId;
     String tablename;
     String isReserved;
     String reserveDate;
@@ -11,9 +11,9 @@ public class Tables {
 
     }
 
-    public Tables( String tablename, String isReserved,
+    public Tables(String tableId, String tablename, String isReserved,
                   String reserveDate, String reserveTime) {
-
+        this.tableId = tableId;
         this.tablename = tablename;
         this.isReserved = isReserved;
         this.reserveDate = reserveDate;
