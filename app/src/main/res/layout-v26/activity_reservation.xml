@@ -7,35 +7,39 @@
     android:orientation="vertical"
     tools:context="com.example.ishakadam.restrauntreservation.Reservation">
 
-    <LinearLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/time"
-            android:layout_width="341dp"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType=""
-            android:text="Time" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:orientation="horizontal">
+        android:contentDescription="@string/date_hint"
+        >
 
         <EditText
             android:id="@+id/date"
-            android:layout_width="347dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType=""
-            android:text="Date" />
+            android:ems="10"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:importantForAutofill="no" />
+    </android.support.design.widget.TextInputLayout>
 
-    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/time_hint">
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/time"
+            android:inputType="time"
+            android:importantForAutofill="no" />
+    </android.support.design.widget.TextInputLayout>
+
+
 
     <Button
         android:id="@+id/check"
