@@ -5,26 +5,34 @@ import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
 
 public class Reservation extends AppCompatActivity implements View.OnClickListener {
         EditText time,date;
     private int mYear, mMonth, mDay, mHour, mMinute;
-
+        DatabaseReference dbTable;
+        Button btchk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
-
+        btchk=(Button)findViewById(R.id.check);
         time=(EditText)findViewById(R.id.time);
         date=(EditText)findViewById(R.id.date);
-
+            dbTable = FirebaseDatabase.getInstance().getReference("tables");
         time.setOnClickListener(this);
         date.setOnClickListener(this);
+        btchk.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +58,7 @@ public class Reservation extends AppCompatActivity implements View.OnClickListen
                         }
                     }, mYear, mMonth, mDay);
             datePickerDialog.show();
+
         }
         if (v == time) {
 
@@ -71,6 +80,10 @@ public class Reservation extends AppCompatActivity implements View.OnClickListen
                     }, mHour, mMinute, false);
             timePickerDialog.show();
         }
+        if (v==btchk){
+            
+        }
     }
+
 
 }
